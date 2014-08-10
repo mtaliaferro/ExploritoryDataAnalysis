@@ -12,7 +12,7 @@ library(chron)
 HPC_data[,1] <- as.Date(strptime(HPC_data[,1],"%d/%m/%Y"))
 HPC_data[,2] <- chron(times=HPC_data[,2])
 HPC_sel <- HPC_data[HPC_data$Date == as.Date("2007-02-01")
-                  | HPC_data$Date == as.Date("2007-02-02"),]
+                    | HPC_data$Date == as.Date("2007-02-02"),]
 
 # Plot 2 - line graph of global active power (y) by date-time (x)
 
